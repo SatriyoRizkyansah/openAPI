@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Todolist API",
+    "version": "1.0.0",
+    "description": "Todolist API",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "API Support",
+      "url": "http://www.swagger.io/support",
+      "email": "6R4lJ@example.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "servers": [
+    {
+      "description": "Todolist API",
+      "url": "http://{envitonment}.todolist.localhost:3000",
+      "variables": {
+        "envitonment": {
+          "default": "dev",
+          "enum": ["dev", "test", "prod"]
+        }
+      }
+    }
+  ],
+  "components": {},
+  "paths": {
+    "/name": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
