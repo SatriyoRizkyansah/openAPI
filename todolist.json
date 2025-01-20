@@ -33,20 +33,28 @@
   },
   "components": {},
   "paths": {
-    "/todolist" : {
-      "get" : {
-
+    "/todolist": {
+      "get": {
+        "summary": "Get all todolists",
+        "description": "Get all todolists by default",
+        "responses": {}
       },
-      "post" : {
-
+      "post": {
+        "summary": "Create a new todolist",
+        "description": "Create a new todolist to database",
+        "responses": {}
       }
     },
-    "/todolist/{todoListId}" : {
-      "put" : {
-
-      }, 
-      "delete" : {
-        
+    "/todolist/{todoListId}": {
+      "put": {
+        "summary": "Update a todolist",
+        "description": "Update a todolist",
+        "responses": {}
+      },
+      "delete": {
+        "summary": "Delete a todolist",
+        "description": "Delete a todolist",
+        "responses": {}
       }
     }
   }
