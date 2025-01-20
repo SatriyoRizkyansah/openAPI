@@ -27,17 +27,26 @@
       }
     }
   ],
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  },
   "components": {},
   "paths": {
-    "/name": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
+    "/todolist" : {
+      "get" : {
+
+      },
+      "post" : {
+
+      }
+    },
+    "/todolist/{todoListId}" : {
+      "put" : {
+
+      }, 
+      "delete" : {
+        
       }
     }
   }
