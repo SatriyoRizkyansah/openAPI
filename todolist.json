@@ -67,6 +67,14 @@
       "post": {
         "summary": "Create a new todolist",
         "description": "Create a new todolist to database",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
         "responses": {}
       }
     },
@@ -74,6 +82,14 @@
       "put": {
         "summary": "Update a todolist",
         "description": "Update a todolist",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {}
+            }
+          }
+        },
         "parameters": [
           {
             "name": "todolistId",
