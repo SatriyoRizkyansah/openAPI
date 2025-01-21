@@ -59,6 +59,16 @@
               "nullable": true,
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "java": {
+                "description": "Example name java",
+                "value": "java"
+              },
+              "php": {
+                "description": "Example name php",
+                "value": "php"
+              }
             }
           }
         ],
@@ -96,6 +106,24 @@
                     }
                   }
                 }
+              },
+              "examples": {
+                "java": {
+                  "description": "Example name java",
+                  "value": {
+                    "name": "java",
+                    "priority": 1,
+                    "tags": ["java", "Programming"]
+                  }
+                },
+                "php": {
+                  "description": "Example name php",
+                  "value": {
+                    "name": "php",
+                    "priority": 1,
+                    "tags": ["php", "Programming"]
+                  }
+                }
               }
             }
           }
@@ -126,6 +154,24 @@
                     "default": 1
                   }
                 }
+              },
+              "examples": {
+                "java": {
+                  "description": "Example name java",
+                  "value": {
+                    "name": "java",
+                    "priority": 1,
+                    "tags": ["java", "Programming"]
+                  }
+                },
+                "php": {
+                  "description": "Example name php",
+                  "value": {
+                    "name": "php",
+                    "priority": 1,
+                    "tags": ["php", "Programming"]
+                  }
+                }
               }
             }
           }
@@ -140,6 +186,16 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "java": {
+                "description": "Example name java",
+                "value": "1"
+              },
+              "php": {
+                "description": "Example name php",
+                "value": "2"
+              }
             }
           }
         ],
