@@ -31,7 +31,6 @@
     "description": "Find out more about Swagger",
     "url": "http://swagger.io"
   },
-  "components": {},
   "paths": {
     "/todolist": {
       "get": {
@@ -187,6 +186,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "object",
                   "properties": {
                     "id": {
                       "type": "string"
@@ -413,6 +413,94 @@
                     }
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "name": "todolistId",
+      "in": "path",
+      "required": true,
+      "description": "Todolist id for updated",
+      "schema": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "examples": {
+        "java": {
+          "description": "Example name java",
+          "value": "1"
+        },
+        "php": {
+          "description": "Example name php",
+          "value": "2"
+        }
+      }
+    },
+    "schemas": {
+      "Todolist": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "number",
+            "format": "int32"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "CreateOrUpdateTodoList": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "number",
+            "format": "int32"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ArrayTodoList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "priority": {
+              "type": "number",
+              "format": "int32"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
               }
             }
           }
